@@ -3,7 +3,7 @@
     <ul class="tab">
     <% Category.all.each do |category| %>
       <li>
-       <%= link_to(category.name, products_path(category: category.name)) %>
+       <%= link_to(category.name, products_path(category: category.name), class:"btn btn-unique") %>
      </li>
      <% end %>
    </ul>
@@ -27,7 +27,7 @@
             <p class="card-text">
               ￥ <%= product.price %>
             </p>
-            <a href="/" class="btn btn-info">Button</a>
+            <button class="btn btn-unique"><%= link_to("查看详情",product_path(product))%></button>
           </div>
         </div>
       </div>

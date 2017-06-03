@@ -21,7 +21,7 @@
   @import url(https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.1/css/mdb.min.css);
 
 //-- product-index start
-.product-index
+.background
 {
   background-color: #FCE4EC;
 }
@@ -69,14 +69,14 @@
 }
 /* Dropdown links */
 .dropdown-menu li a {
-
-    color: #f5f5f5 !important;
+  color: #f5f5f5 !important;
 }
 
 /* On hover, the dropdown links will turn red */
 .dropdown-menu li a:hover {
-    color:  #323232 !important;
-    background-color: #B3E5FC !important;
+  font-size: 15px;
+  color:  #323232 !important;
+  background-color: #B3E5FC !important;
 }
 //-- navbar end
 
@@ -105,9 +105,9 @@
 	}
 
 	a {
-    font-size: 120%;
-		background-color: transparent;
-		border-bottom: 1px solid rgba(255,255,255,1);
+    font-size: 18px;
+		// background-color: transparent;
+		// border-bottom: 3px solid rgba(255,255,255,1);
 		color: #87CEFA;
 		font-weight: 500;
 		display: block;
@@ -119,7 +119,6 @@
     -webkit-font-smoothing: antialiased;
 		-moz-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
-		border-bottom: 2px solid rgba(255,255,255,1);
 	}
 
 }
@@ -134,10 +133,46 @@
 //-- footer end
 
 //-- content test start
+.product-index{
 .card {
   width: 350px;
   height: 400px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
+
+.card-block{
+  button{
+    border-radius: 0;
+    a{
+      color: white;
+    }
+    a:hover{
+      text-decoration: none;
+    }
+  }
+}
+}
 //-- content test end
+
+//-- table1 start
+.table{
+  th{text-align: center;}
+  td{
+    text-align: center;
+    img{
+      position:relative;
+    }
+  }
+  margin: 0 auto;
+}
+//-- table1 end
+
+//-- button start
+//-- button end
+
+//-- show start
+.show-image{
+  margin-left: 150px;
+}
+//-- show end
