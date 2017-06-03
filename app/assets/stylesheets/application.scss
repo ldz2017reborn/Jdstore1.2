@@ -155,7 +155,7 @@
 }
 //-- content test end
 
-//-- table1 start
+//-- index-table start
 .index-table{
   margin: 0 auto;
   width: 900px;
@@ -195,7 +195,7 @@ thead {
 	th {
     background-color: #616161;
     color: #bdc3c7;
-    font-size: 120%;
+    font-size: 110%;
     text-align: center;
 	}
 }
@@ -224,10 +224,65 @@ tbody {
 }
 }
 }
-//-- table1 end
+//-- index-table end
 
-//-- button start
-//-- button end
+//-- checkout-table start
+.checkout-table{
+  margin: 0 auto;
+  width: 900px;
+  text-align: center;
+
+  table {
+  margin-top: 10px;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  a {
+    color: #1A237E;
+  }
+  a:hover{
+    color: #424242;
+    text-decoration:underline;
+  }
+
+td {
+	background-color: rgba(255,255,255,0.2);
+	color: #263238;
+  font-weight:bold;
+}
+
+thead {
+	th {
+    background-color: #616161;
+    color: #bdc3c7;
+    text-align: center;
+	}
+}
+
+tbody {
+	tr {
+		&:hover {
+			background-color: rgba(255,255,255,0.3);
+		}
+	}
+  td {
+  position: relative;
+  &:hover {
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -9999px;
+      bottom: -9999px;
+      background-color: rgba(255,255,255,0.2);
+      z-index: -1;
+    }
+  }
+}
+}
+}
+}
+//-- checkout-table end
 
 //-- show start
 .show-image{
