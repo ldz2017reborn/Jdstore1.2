@@ -2,6 +2,7 @@ Rails.application.routes.draw do
  root 'products#index'
  namespace :admin do
    resources :products
+   resources :categories
      resources :orders do
      member do
        post :cancel
