@@ -95,6 +95,7 @@
 	margin: 0;
 	width: 100%;
   margin-left: 50px;
+  margin-top: 20px;
 
 	li {
 		float: left;
@@ -163,7 +164,6 @@
 
   table {
   margin-top: 10px;
-  // margin-left: 150px;
 	overflow: hidden;
 	box-shadow: 0 0 20px rgba(0,0,0,0.1);
   a {
@@ -182,13 +182,8 @@ tr {
 td {
 	background-color: rgba(255,255,255,0.2);
 	color: #263238;
-  border: none !important;
   font-size: 120%;
   font-weight:bold;
-}
-
-th {
-  border: none !important;
 }
 
 thead {
