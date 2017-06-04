@@ -1,13 +1,29 @@
 <div class="product-index">
   <div class="row">
-    <ul class="tab">
+    <span class="button1">
+      <span class="button">
     <% Category.all.each do |category| %>
       <li>
        <%= link_to(category.name, products_path(category: category.name), class:"btn btn-unique") %>
      </li>
      <% end %>
-   </ul>
-   <br/>
+   </span>
+   </span>
+
+   <span class="dropdown2">
+   <div class="dropdown clearfix pull-right">
+    <button class="btn btn-unique dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      排序
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+      <li class="fl orderList-orderItem pl20 pr20 <%= 'orderList-activeItem' if !params[:order] %>"><%= link_to("新品", products_path) %></li>
+      <li class="fl orderList-orderItem pl20 pr20 <%= 'orderList-activeItem' if params[:order] == 'by_product_quantity' %>"><%= link_to("销量", products_path(:order => "by_product_quantity")) %></li>
+      <li class="fl orderList-orderItem pl20 pr20 <%= 'orderList-activeItem' if params[:order] == 'by_product_price' %>"><%= link_to("价格", products_path(:order => "by_product_price")) %></li>
+     </ul>
+   </div>
+ </span>
+ </div>
 
    <div class="row text-center">
      <% @products.each do |product| %>
@@ -35,4 +51,3 @@
     </div>
 
   </div>
-</div>

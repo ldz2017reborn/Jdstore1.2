@@ -20,6 +20,13 @@
   @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css);
   @import url(https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.1/css/mdb.min.css);
 
+h2 h3{
+  color: #1D2330;
+}
+p{
+  color: #1D2330;
+}
+
 //-- product-index start
 .background
 {
@@ -88,24 +95,25 @@
 //-- flashes end
 
 //-- tab start
-.tab {
+.button1 {
+  // .button{
 	position: relative;
 	overflow: hidden;
   padding-left: 0;
-	margin: 0;
+  margin: 0;
 	width: 100%;
   margin-left: 50px;
   margin-top: 20px;
+  margin-bottom: 20px;
 
-	li {
-		float: left;
-		line-height: 38px;
+  li{
+    float: left;
+    line-height: 38px;
 		overflow: hidden;
 		padding: 0;
 		position: relative;
-	}
-
-	a {
+  }
+  a {
     font-size: 18px;
 		// background-color: transparent;
 		// border-bottom: 3px solid rgba(255,255,255,1);
@@ -121,10 +129,10 @@
 		-moz-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
 	}
-
 }
+// }
 
-//-- tab end
+// //-- tab end
 
 //-- footer start
 .footer{
@@ -188,7 +196,7 @@ td {
 
 thead {
 	th {
-    background-color: #616161;
+    background-color: #1D2330;
     color: #bdc3c7;
     font-size: 110%;
     text-align: center;
@@ -247,7 +255,7 @@ td {
 
 thead {
 	th {
-    background-color: #616161;
+    background-color: #1D2330;
     color: #bdc3c7;
     text-align: center;
 	}
@@ -284,3 +292,63 @@ tbody {
   margin-left: 150px;
 }
 //-- show end
+
+//-- index-dropdown start
+.dropdown2{
+  .open .dropdown-toggle {
+      color: #1D2330 ;
+  }
+
+  .dropdown-menu {
+    background-color: #FCE4EC !important;
+  }
+  /* Dropdown links */
+  .dropdown-menu li a {
+    color: #757575 !important;
+  }
+
+  /* On hover, the dropdown links will turn red */
+  .dropdown-menu li a:hover {
+    font-size: 15px;
+    color:  #323232 !important;
+    background-color: #FCE4EC !important;
+  }
+}
+//-- index-dropdown end
+
+//-- welcome start
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    height: 100%;
+    margin: auto;
+}
+
+.carousel-caption{
+  padding-bottom: 400px;
+}
+
+.carousel-caption p {
+  font-size: 1.4em;
+
+}
+.carousel-caption h2 {
+    color: #F5F5F5 !important;
+    font-size: 5em
+}
+
+.carousel-caption a{
+  text-decoration: none;
+  color: #F5F5F5;
+  background-color: transparent;
+}
+
+.carousel-caption:hover,
+.carousel-caption:focus{
+  color: #E0FFFF;
+  background-color: transparent;
+}
+
+.badge{
+  background-color:#D4E157;
+}
+//-- welcome end
