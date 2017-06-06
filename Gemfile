@@ -47,6 +47,7 @@ gem 'intercom-rails'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'carrierwave-qiniu'
 gem 'qiniu-rs'
+gem 'figaro'
 
 
 group :development, :test do
